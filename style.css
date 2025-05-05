@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: url('fundo_task.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-hero {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo-hero img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Grid */
+  .layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* Caixas */
+  .container, .sidebar {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 300px;
+  }
+  
+  /* Emojis */
+  .emoji-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .emoji-options span {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .emoji-options span:hover {
+    transform: scale(1.2);
+  }
+  
+  #emocaoMensagem {
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  /* Lista */
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #addTaskBtn {
+    padding: 0 16px;
+    font-size: 20px;
+    border: none;
+    background: #6c5ce7;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  ul#taskList {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  ul#taskList li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  
+  footer {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto;
+  }
+  

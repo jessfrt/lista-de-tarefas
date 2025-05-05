@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>To do Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-hero">
+      <img src="7UzU.gif" alt="Bloco de Tarefas">
+      <h1>To do Playground</h1>
+    </div>
+  </header>
+
+  <main class="layout-grid">
+    <!-- Lado Esquerdo -->
+    <div class="sidebar">
+      <div class="clima-caixa">
+        <h3>Seu Clima de Hoje</h3>
+        <p>Como você se sente?</p>
+        <div class="emoji-options">
+          <span>😀</span><span>😐</span><span>😢</span><span>😡</span>
+        </div>
+        <p id="emocaoMensagem">Escolha uma emoção acima.</p>
+      </div>
+    </div>
+
+    <!-- Centro -->
+    <div class="container">
+      <h2 id="greeting">Boa tarde!</h2>
+      <p id="currentDate">segunda-feira, 5 de maio de 2025</p>
+      <h3>Minha Lista</h3>
+      <p class="description">Organize seu dia com estilo.</p>
+
+      <form id="taskForm" class="input-group">
+        <input type="text" id="taskInput" placeholder="O que você precisa fazer?" required>
+        <button type="submit" id="addTaskBtn">+</button>
+      </form>
+
+      <ul id="taskList"></ul>
+      <p id="emptyMessage">Sua lista está vazia.</p>
+    </div>
+
+    <!-- Lado Direito -->
+    <div class="sidebar">
+      <div class="metas-dia">
+        <h3>Metas Rápidas</h3>
+        <ul>
+          <li>Beber água</li>
+          <li>Evitar distrações</li>
+          <li>Descansar os olhos</li>
+        </ul>
+        <div class="bichinho">
+          <img src="6oa.gif" alt="Mascote fofo">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>A constância constrói mais que o impulso.</p>
+    <small>© 2025 Jéssica – Projeto v0.1</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
